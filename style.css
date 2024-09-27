@@ -51,17 +51,15 @@ ul {
 li {
     background-color: #1f1f1f;
     margin: 15px 0;
-    padding: 15px 20px;
+    padding: 15px 10px; /* Изменено для более компактного размера */
     border-radius: 15px;
     border: 2px solid transparent;
-    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s; 
     font-size: 1.1rem;
-    max-width: 600px; /* Установлена фиксированная ширина для соответствия другим окнам */
+    max-width: 90%; /* Ограничиваем максимальную ширину */
     margin-left: auto;
     margin-right: auto;
-    white-space: nowrap;
 }
-
 
 li:hover {
     background-color: #292929;
