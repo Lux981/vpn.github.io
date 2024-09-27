@@ -6,6 +6,8 @@ body {
     padding: 20px;
     text-align: center;
     animation: fadeIn 1s ease-in-out;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 /* Анимация плавного появления */
@@ -23,21 +25,28 @@ a {
     color: #bb86fc;
     text-decoration: none;
     font-weight: bold;
-    transition: color 0.3s;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #292929;
+    border-radius: 12px;
+    transition: background-color 0.3s, color 0.3s;
+    max-width: 300px;
+    margin: 10px auto;
 }
 
 a:hover {
-    color: #3700b3;
+    background-color: #3700b3;
+    color: #ffffff;
 }
 
-/* Нумерованный список */
-ol {
-    list-style-type: decimal;
+/* Убираем маркеры списка */
+ul {
+    list-style: none;
     padding: 0;
-    counter-reset: section;
 }
 
-ol li {
+/* Стиль для пунктов списка */
+li {
     background-color: #1f1f1f;
     margin: 15px 0;
     padding: 15px;
@@ -45,16 +54,14 @@ ol li {
     border: 2px solid transparent;
     transition: background-color 0.3s, transform 0.3s;
     font-size: 1.1rem;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-ol li:hover {
+li:hover {
     background-color: #292929;
     transform: translateY(-5px);
-}
-
-/* Анимация кнопок */
-button, a {
-    transition: all 0.3s ease;
 }
 
 /* Стили для заголовков */
@@ -66,22 +73,45 @@ h1 {
     margin-bottom: 30px;
 }
 
-/* Стили для изображений с обводкой и градиентом */
+/* Стили для изображений с двумя обводками и анимацией */
 img {
     display: block;
     margin: 20px auto;
     max-width: 90%;
     height: auto;
     border-radius: 15px;
-    border: 5px solid transparent;
-    background: linear-gradient(45deg, #bb86fc, #3700b3);
+    border: 5px solid #bb86fc;
     padding: 5px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    z-index: 1;
 }
 
-img:hover {
-    transform: scale(1.05);
-    box-shadow: 0px 0px 20px rgba(187, 134, 252, 0.5);
+/* Вторая анимированная обводка */
+img::before {
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    right: -10px;
+    bottom: -10px;
+    border-radius: 20px;
+    border: 2px solid transparent;
+    background-image: linear-gradient(45deg, #bb86fc, #3700b3, #bb86fc, #3700b3);
+    background-size: 400% 400%;
+    z-index: -1;
+    animation: gradientAnimation 3s infinite;
+}
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
 }
 
 /* Стили для подписи */
