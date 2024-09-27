@@ -73,7 +73,7 @@ h1 {
     margin-bottom: 30px;
 }
 
-/* Стили для изображений с активной обводкой */
+/* Стили для изображений с обводкой */
 img {
     display: block;
     margin: 20px auto;
@@ -82,35 +82,7 @@ img {
     border-radius: 15px;
     position: relative;
     z-index: 1;
-    border: 5px solid transparent; /* Добавлена обводка */
-}
-
-/* Активная обводка с переливанием */
-img::before {
-    content: '';
-    position: absolute;
-    top: -5px;
-    left: -5px;
-    right: -5px;
-    bottom: -5px;
-    border-radius: 20px;
-    border: 5px solid transparent; /* Изменение размера границы */
-    background-image: linear-gradient(45deg, #bb86fc, #ff79c6, #bb86fc, #ff79c6);
-    background-size: 400% 400%;
-    z-index: -1;
-    animation: gradientAnimation 2.5s infinite;
-}
-
-@keyframes gradientAnimation {
-    0% {
-        background-position: 0% 50%;
-    }
-    50% {
-        background-position: 100% 50%;
-    }
-    100% {
-        background-position: 0% 50%;
-    }
+    border: 2px solid #bb86fc; /* Простой цвет обводки */
 }
 
 /* Стили для подписи */
@@ -186,8 +158,8 @@ footer {
 
 /* Стили для кнопки закрытия */
 #close-btn {
-    padding: 10px 20px;
-    background-color: #3700b3;
+    padding: 12px 24px; /* Увеличен размер кнопки */
+    background-color: #bb86fc; /* Цвет кнопки изменен под стиль сайта */
     color: #ffffff;
     border: none;
     border-radius: 12px;
@@ -198,6 +170,6 @@ footer {
 }
 
 #close-btn:hover {
-    background-color: #bb86fc;
+    background-color: #3700b3;
     transform: translateY(-2px); /* Эффект при наведении */
 }
