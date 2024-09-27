@@ -178,3 +178,19 @@ footer {
     transform: translateY(-2px); /* Эффект при наведении */
     box-shadow: 0 0 20px rgba(187, 134, 252, 0.8); /* Эффект свечения при наведении */
 }
+
+@keyframes pulse {
+    0% {
+        background-color: rgba(30, 30, 30, 1);
+    }
+    50% {
+        background-color: rgba(50, 50, 50, 1);
+    }
+    100% {
+        background-color: rgba(30, 30, 30, 1);
+    }
+}
+
+body {
+    animation: pulse 3s infinite; /* Анимация с длительностью 3 секунды и бесконечным повтором */
+}
