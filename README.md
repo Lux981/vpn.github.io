@@ -22,8 +22,6 @@
 <img src="connect.png" alt="Кнопка подключения">
 
 <!-- Подпись -->
-<footer>
-  From Damir with love ❤️
-</footer>
+
 
 
