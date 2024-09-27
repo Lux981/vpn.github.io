@@ -1,5 +1,5 @@
 <!-- Подключаем наш кастомный CSS для темной темы -->
-<link rel="stylesheet" href="/assets/style.css">
+<link rel="stylesheet" href="/style.css">
 
 # Установка ВПН
 
