@@ -1,3 +1,136 @@
+/* Основные стили для темной темы */
+body {
+    background: linear-gradient(135deg, #121212 0%, #1d1d1d 100%);
+    color: #e0e0e0;
+    font-family: 'Roboto', sans-serif;
+    padding: 20px;
+    text-align: center;
+    animation: fadeIn 1s ease-in-out;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Анимация плавного появления */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Стили для ссылок (кнопки) */
+a {
+    color: #bb86fc;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #292929;
+    border-radius: 12px;
+    transition: background-color 0.3s, color 0.3s;
+    margin: 10px auto;
+    white-space: nowrap; /* Текст будет всегда в одну строку */
+}
+
+a:hover {
+    background-color: #3700b3;
+    color: #ffffff;
+}
+
+/* Убираем маркеры списка */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+/* Стиль для пунктов списка */
+li {
+    background-color: #1f1f1f;
+    margin: 15px 0;
+    padding: 15px;
+    border-radius: 15px;
+    border: 2px solid transparent;
+    transition: background-color 0.3s, transform 0.3s;
+    font-size: 1.1rem;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+li:hover {
+    background-color: #292929;
+    transform: translateY(-5px);
+}
+
+/* Стили для заголовков */
+h1 {
+    color: #ffffff;
+    font-size: 2.5rem;
+    border-bottom: 2px solid #bb86fc;
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+}
+
+/* Стили для изображений с активной обводкой */
+img {
+    display: block;
+    margin: 20px auto;
+    max-width: 90%;
+    height: auto;
+    border-radius: 15px;
+    position: relative;
+    z-index: 1;
+}
+
+/* Активная обводка с переливанием */
+img::before {
+    content: '';
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    right: -5px;
+    bottom: -5px;
+    border-radius: 20px;
+    border: 2px solid transparent;
+    background-image: linear-gradient(45deg, #bb86fc, #ff79c6, #bb86fc, #ff79c6);
+    background-size: 400% 400%;
+    z-index: -1;
+    animation: gradientAnimation 2.5s infinite;
+}
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* Стили для подписи */
+footer {
+    margin-top: 40px;
+    color: #bb86fc;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    animation: glow 1.5s infinite alternate;
+}
+
+/* Анимация эффекта свечения подписи */
+@keyframes glow {
+    from {
+        text-shadow: 0 0 10px #bb86fc, 0 0 20px #bb86fc, 0 0 30px #bb86fc;
+    }
+    to {
+        text-shadow: 0 0 20px #3700b3, 0 0 30px #3700b3, 0 0 40px #3700b3;
+    }
+}
+
 /* Модальное окно (напоминание) */
 .modal {
     display: none;
@@ -27,15 +160,6 @@
 }
 
 /* Анимация появления модального окна */
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}
-
 @keyframes popIn {
     from {
         transform: scale(0.8);
