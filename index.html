@@ -7,25 +7,40 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Добро пожаловать на сайт ВПН!</h1>
-    <ul>
-        <li>Скачать и установить приложение под ваше устройство по <a href="#">ссылке</a>.</li>
-        <li>Нажать кнопку подключить.</li>
-        <li><a href="#" id="open-modal">Тык сюда</a></li>
-    </ul>
-    <img src="image.png" alt="VPN Image" />
-    <footer>© 2024 ВПН. Все права защищены.</footer>
-
-    <!-- Модальное окно -->
-    <div class="modal" id="myModal">
+    <!-- Напоминание -->
+    <div id="reminder" class="modal">
         <div class="modal-content">
-            <div class="modal-header">Важная информация</div>
-            <div class="modal-body">Если вы знаете Дамира, то хорошо, а если нет, то шли бы вы отсюда.</div>
-            <button id="ok-btn">Понятно</button>
+            <h2>Важная информация</h2>
+            <p>Если вы знаете Дамира, то хорошо, а если нет, то шли бы вы отсюда.</p>
+            <button id="close-btn">Понятно</button>
         </div>
     </div>
 
-    <script>
-        const modal = document.getElementById("myModal");
-        const openModal = document.getElementById("open-modal");
-        const okBtn = document.getElementById("ok-btn
+    <h1>Установка ВПН</h1>
+
+    <ul>
+        <li>Скачать и установить приложение под ваше устройство по ссылке. 
+            <a href="https://www.wireguard.com/install/">Тык сюда</a>
+        </li>
+        <li>Скачать файл конфигурации, который я вам отправил.</li>
+        <li>Зайти в приложение и нажать кнопку "Импорт тунелей из файла".</li>
+    </ul>
+
+    <!-- Вставка изображения для импорта -->
+    <img src="import.png" alt="Импорт тунелей">
+
+    <ul>
+        <li>Нажать кнопку подключить.</li>
+    </ul>
+
+    <!-- Вставка изображения для подключения -->
+    <img src="connect.png" alt="Кнопка подключения">
+
+    <!-- Подпись -->
+    <footer>
+        From Damir with love ❤️
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
