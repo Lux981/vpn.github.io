@@ -26,11 +26,11 @@ a, #close-btn {
     text-decoration: none;
     font-weight: bold;
     display: inline-block;
-    padding: 10px 20px;
+    padding: 10px 15px; /* Изменено для более компактного размера кнопки */
     background-color: #292929;
     border-radius: 12px;
     transition: background-color 0.3s, color 0.3s, transform 0.3s, box-shadow 0.3s;
-    margin: 10px auto;
+    margin: 10px 5px; /* Уменьшено расстояние между кнопками */
     white-space: nowrap; /* Текст будет всегда в одну строку */
 }
 
@@ -43,19 +43,20 @@ a:hover, #close-btn:hover {
 /* Убираем маркеры списка */
 ul {
     list-style: none;
-    padding: 0;
+    display: inline-block; /* Убираем переносы в списках */
+    padding: 0; /* Убираем отступы */
 }
 
 /* Стиль для пунктов списка */
 li {
     background-color: #1f1f1f;
     margin: 15px 0;
-    padding: 15px;
+    padding: 15px 10px; /* Изменено для более компактного размера */
     border-radius: 15px;
     border: 2px solid transparent;
-    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s; /* Добавляем transition для эффекта свечения */
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s; 
     font-size: 1.1rem;
-    max-width: 500px;
+    max-width: 90%; /* Ограничиваем максимальную ширину */
     margin-left: auto;
     margin-right: auto;
 }
