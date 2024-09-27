@@ -1,55 +1,104 @@
-/* Общие стили для темной темы */
+/* Основные стили для темной темы */
 body {
-    background-color: #121212;
+    background: linear-gradient(135deg, #121212 0%, #1d1d1d 100%);
     color: #e0e0e0;
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
     padding: 20px;
+    text-align: center;
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Анимация плавного появления */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
 /* Стили для ссылок */
 a {
     color: #bb86fc;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
 }
 
 a:hover {
     color: #3700b3;
 }
 
+/* Нумерованный список */
+ol {
+    list-style-type: decimal;
+    padding: 0;
+    counter-reset: section;
+}
+
+ol li {
+    background-color: #1f1f1f;
+    margin: 15px 0;
+    padding: 15px;
+    border-radius: 15px;
+    border: 2px solid transparent;
+    transition: background-color 0.3s, transform 0.3s;
+    font-size: 1.1rem;
+}
+
+ol li:hover {
+    background-color: #292929;
+    transform: translateY(-5px);
+}
+
+/* Анимация кнопок */
+button, a {
+    transition: all 0.3s ease;
+}
+
 /* Стили для заголовков */
 h1 {
     color: #ffffff;
+    font-size: 2.5rem;
     border-bottom: 2px solid #bb86fc;
     padding-bottom: 10px;
+    margin-bottom: 30px;
 }
 
-/* Стили для изображений */
+/* Стили для изображений с обводкой и градиентом */
 img {
     display: block;
-    margin: 20px 0;
-    max-width: 100%;
+    margin: 20px auto;
+    max-width: 90%;
     height: auto;
+    border-radius: 15px;
+    border: 5px solid transparent;
+    background: linear-gradient(45deg, #bb86fc, #3700b3);
+    padding: 5px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* Стили для списка */
-ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-li {
-    background-color: #1f1f1f;
-    margin: 10px 0;
-    padding: 10px;
-    border-radius: 8px;
-}
-
-li:hover {
-    background-color: #2c2c2c;
+img:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 0px 20px rgba(187, 134, 252, 0.5);
 }
 
 /* Стили для подписи */
 footer {
-    margin-top: 20px;
+    margin-top: 40px;
     color: #bb86fc;
-    font-size: 14px;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    animation: glow 1.5s infinite alternate;
+}
+
+/* Анимация эффекта свечения подписи */
+@keyframes glow {
+    from {
+        text-shadow: 0 0 10px #bb86fc, 0 0 20px #bb86fc, 0 0 30px #bb86fc;
+    }
+    to {
+        text-shadow: 0 0 20px #3700b3, 0 0 30px #3700b3, 0 0 40px #3700b3;
+    }
 }
