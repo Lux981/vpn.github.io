@@ -3,6 +3,6 @@
 [Тык сюда](https://www.wireguard.com/install/)
 2. Скачать файл конфигурации, который я вам отправлю.
 3. Зайти в приложение и нажать кнопку "Импорт тунелей из файла".
-![Вот так](vpn.github.io/blob/main/import.png)
+![Вот так](https://github.com/Lux981/vpn.github.io/blob/9a0d36a84ce7ac83d44bace557f745fde9412c7a/import.png)
 4. Нажать кнопку подключить.
 ## Готово!
