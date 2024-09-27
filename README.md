@@ -2,7 +2,7 @@
 
 1. Скачать и установить приложение под ваше устройство по ссылке ниже.
 
-[Тык сюда](https://www.wireguard.com/install/)
+  [Тык сюда](https://www.wireguard.com/install/)
 
 2. Скачать файл конфигурации, который я вам отправлю.
 
@@ -13,7 +13,5 @@
 4. Нажать кнопку подключить.
 
 ![](https://github.com/Lux981/vpn.github.io/blob/608569f67b81dfa4b2a562a29a32b1432abe2b4d/connect.png)
-
-# Готово!
 
 ### From Damir with love❤️
