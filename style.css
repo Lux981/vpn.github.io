@@ -169,6 +169,17 @@ footer {
     }
 }
 
+/* Стили для текста в модальном окне */
+.modal-content h2 {
+    color: #bb86fc;
+    margin-bottom: 20px;
+}
+
+.modal-content p {
+    color: #e0e0e0;
+    margin-bottom: 20px;
+}
+
 /* Стили для кнопки закрытия */
 #close-btn {
     padding: 10px 20px;
