@@ -3,12 +3,12 @@
 
 /* Основные стили для темной темы */
 body {
-    background: linear-gradient(135deg, #121212 0%, #1d1d1d 100%);
+    background: linear-gradient(135deg, #0d0d0d 0%, #1a1a1a 100%); /* Уменьшены светлые оттенки */
     color: #e0e0e0;
     font-family: 'Montserrat', sans-serif;
     padding: 20px;
     text-align: center;
-    animation: fadeIn 1s ease-in-out;
+    animation: fadeIn 0.67s ease-in-out; /* Увеличена скорость анимации на 50% */
     max-width: 1200px;
     margin: 0 auto;
     font-size: 1.15rem; /* Увеличен размер шрифта на 15% */
@@ -31,7 +31,7 @@ a, #close-btn {
     font-weight: bold;
     display: inline-block;
     padding: 10px 15px;
-    background-color: #292929; /* Темный фон для кнопок */
+    background-color: #232323; /* Темный фон для кнопок */
     border-radius: 12px;
     transition: background-color 0.3s, color 0.3s, transform 0.3s, box-shadow 0.3s;
     margin: 10px 5px;
@@ -40,7 +40,7 @@ a, #close-btn {
 }
 
 a:hover, #close-btn:hover {
-    background-color: #3700b3; /* Фиолетовый при наведении */
+    background-color: #3b3b3b; /* Более контрастный фон при наведении */
     color: #ffffff;
     box-shadow: 0 0 20px rgba(187, 134, 252, 0.8); /* Эффект свечения при наведении */
 }
@@ -124,7 +124,7 @@ footer {
     height: 100%;
     background-color: rgba(0, 0, 0, 0.8);
     backdrop-filter: blur(5px);
-    animation: fadeIn 1s ease-in-out;
+    animation: fadeIn 0.67s ease-in-out; /* Увеличена скорость анимации на 50% */
 }
 
 /* Контент модального окна */
@@ -179,7 +179,8 @@ footer {
 }
 
 #close-btn:hover {
-    background-color: #3700b3;
+    background-color: #3700b3; /* Фиолетовый при наведении */
     transform: translateY(-2px);
     box-shadow: 0 0 20px rgba(187, 134, 252, 0.8); /* Эффект свечения при наведении */
 }
+
