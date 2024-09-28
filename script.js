@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function() {
-    // Показываем модальное окно1
+    // Показываем модальное окно
     const reminder = document.getElementById("reminder");
     const closeBtn = document.getElementById("close-btn");
 
