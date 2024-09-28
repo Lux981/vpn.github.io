@@ -3,7 +3,7 @@
 
 /* Основные стили для темной темы */
 body {
-    background: linear-gradient(135deg, #0a0a0a 0%, #1d1d1d 100%);
+    background: linear-gradient(135deg, #121212 0%, #1d1d1d 100%);
     color: #e0e0e0;
     font-family: 'Montserrat', sans-serif;
     padding: 20px;
@@ -26,12 +26,12 @@ body {
 
 /* Стили для ссылок (кнопки) */
 a, #close-btn {
-    color: #ffffff;
+    color: #bb86fc; /* Фиолетовый цвет для текста */
     text-decoration: none;
     font-weight: bold;
     display: inline-block;
     padding: 10px 15px;
-    background-color: #1f1f1f; /* Темный фон для кнопок */
+    background-color: #292929; /* Темный фон для кнопок */
     border-radius: 12px;
     transition: background-color 0.3s, color 0.3s, transform 0.3s, box-shadow 0.3s;
     margin: 10px 5px;
@@ -40,9 +40,9 @@ a, #close-btn {
 }
 
 a:hover, #close-btn:hover {
-    background-color: #6200ea; /* Неоновый фиолетовый */
+    background-color: #3700b3; /* Фиолетовый при наведении */
     color: #ffffff;
-    box-shadow: 0 0 20px rgba(98, 0, 234, 0.8); /* Эффект свечения при наведении */
+    box-shadow: 0 0 20px rgba(187, 134, 252, 0.8); /* Эффект свечения при наведении */
 }
 
 /* Убираем маркеры списка */
@@ -54,7 +54,7 @@ ul {
 
 /* Стиль для пунктов списка */
 li {
-    background-color: #292929; /* Темный фон для пунктов */
+    background-color: #1f1f1f; /* Темный фон для пунктов */
     margin: 15px 0;
     padding: 15px 10px;
     border-radius: 15px;
@@ -67,16 +67,16 @@ li {
 }
 
 li:hover {
-    background-color: #6200ea; /* Неоновый фиолетовый */
+    background-color: #292929; /* Фон для пункта при наведении */
     transform: translateY(-5px);
-    box-shadow: 0 0 20px rgba(98, 0, 234, 0.8); /* Эффект свечения */
+    box-shadow: 0 0 20px rgba(187, 134, 252, 0.8); /* Эффект свечения */
 }
 
 /* Стили для заголовков */
 h1 {
     color: #ffffff;
     font-size: 2.875rem;
-    border-bottom: 2px solid #6200ea; /* Неоновый фиолетовый */
+    border-bottom: 2px solid #bb86fc; /* Фиолетовая граница */
     padding-bottom: 10px;
     margin-bottom: 30px;
 }
@@ -90,15 +90,15 @@ img {
     border-radius: 15px;
     position: relative;
     z-index: 1;
-    border: 4px solid #6200ea; /* Неоновая обводка */
-    box-shadow: 0 0 15px rgba(98, 0, 234, 0.8); /* Эффект свечения */
+    border: 4px solid #bb86fc; /* Фиолетовая обводка */
+    box-shadow: 0 0 15px rgba(187, 134, 252, 0.8); /* Эффект свечения */
 }
 
 /* Стили для подписи */
 footer {
     margin-top: 40px;
-    color: #6200ea; /* Неоновый фиолетовый */
-    font-size: 1.15rem;
+    color: #bb86fc; /* Фиолетовый цвет */
+    font-size: 1.15rem; /* Размер шрифта */
     letter-spacing: 1px;
     animation: glow 1.5s infinite alternate;
 }
@@ -106,7 +106,7 @@ footer {
 /* Анимация эффекта свечения подписи */
 @keyframes glow {
     from {
-        text-shadow: 0 0 10px #6200ea, 0 0 20px #6200ea, 0 0 30px #6200ea;
+        text-shadow: 0 0 10px #bb86fc, 0 0 20px #bb86fc, 0 0 30px #bb86fc;
     }
     to {
         text-shadow: 0 0 20px #3700b3, 0 0 30px #3700b3, 0 0 40px #3700b3;
@@ -132,7 +132,7 @@ footer {
     background-color: #292929;
     margin: 20% auto;
     padding: 30px;
-    border: 3px solid #6200ea; /* Неоновая обводка */
+    border: 3px solid #bb86fc; /* Фиолетовая обводка */
     border-radius: 15px;
     width: 80%;
     max-width: 500px;
@@ -153,7 +153,7 @@ footer {
 
 /* Стили для текста в модальном окне */
 .modal-content h2 {
-    color: #6200ea; /* Неоновый фиолетовый */
+    color: #bb86fc; /* Фиолетовый цвет заголовка */
     margin-bottom: 20px;
     font-size: 2.1rem;
     font-weight: bold;
@@ -168,7 +168,7 @@ footer {
 /* Стили для кнопки закрытия */
 #close-btn {
     padding: 18px 36px;
-    background-color: #6200ea; /* Неоновый фиолетовый */
+    background-color: #bb86fc; /* Фиолетовый цвет кнопки */
     color: #ffffff;
     border: none;
     border-radius: 12px;
@@ -181,5 +181,5 @@ footer {
 #close-btn:hover {
     background-color: #3700b3;
     transform: translateY(-2px);
-    box-shadow: 0 0 20px rgba(98, 0, 234, 0.8); /* Эффект свечения при наведении */
+    box-shadow: 0 0 20px rgba(187, 134, 252, 0.8); /* Эффект свечения при наведении */
 }
