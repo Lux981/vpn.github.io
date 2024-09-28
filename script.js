@@ -10,3 +10,8 @@ document.addEventListener("DOMContentLoaded", function() {
         reminder.style.display = "none";
     });
 });
+
+particlesJS.load('particles-js', 'particles-config.json', function() {
+    console.log('particles.js loaded - callback');
+});
+
