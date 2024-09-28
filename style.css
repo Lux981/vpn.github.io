@@ -1,4 +1,4 @@
-/* Подключение шрифта Montserrat через Google Fonts1 */
+/* Подключение шрифта Montserrat через Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
 
 /* Основные стили для темной темы */
@@ -224,15 +224,4 @@ footer {
     width: 10px; /* Размер конфетти */
     height: 10px; /* Размер конфетти */
     opacity: 0.8;
-    pointer-events: none; /* Чтобы конфетти не мешали взаимодействию с другими элементами */
-    animation: fall 3s linear forwards; /* Анимация падения */
-}
-
-@keyframes fall {
-    0% {
-        transform: translateY(0);
-    }
-    100% {
-        transform: translateY(100vh); /* Падает до низу экрана */
-    }
-}
+    pointer-events: none; /* Чтобы конфетти не мешали
