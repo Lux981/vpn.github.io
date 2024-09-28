@@ -3,15 +3,17 @@
 
 /* Основные стили для темной темы */
 body {
-    background: linear-gradient(135deg, #121212 0%, #1d1d1d 100%);
+    background: linear-gradient(135deg, #0a0a0a 0%, #121212 100%); /* Убраны светлые оттенки */
+    background-size: 200% 200%; /* Размер фонового изображения для анимации */
     color: #e0e0e0;
-    font-family: 'Montserrat', sans-serif; /* Изменен шрифт на Montserrat */
+    font-family: 'Montserrat', sans-serif; /* Шрифт Montserrat */
     padding: 20px;
     text-align: center;
     animation: fadeIn 1s ease-in-out;
+    animation: gradient 6s ease infinite; /* Увеличена скорость переливания фона */
     max-width: 1200px;
     margin: 0 auto;
-    font-size: 1.15rem; /* Увеличен размер шрифта на 15% */
+    font-size: 1.15rem; /* Размер шрифта */
 }
 
 /* Анимация плавного появления */
@@ -21,6 +23,19 @@ body {
     }
     to {
         opacity: 1;
+    }
+}
+
+/* Анимация переливания фона */
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
     }
 }
 
