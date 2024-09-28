@@ -1,8 +1,11 @@
+/* Подключение шрифта Poppins через Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
 /* Основные стили для темной темы */
 body {
     background: linear-gradient(135deg, #121212 0%, #1d1d1d 100%);
     color: #e0e0e0;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Poppins', sans-serif;
     padding: 20px;
     text-align: center;
     animation: fadeIn 1s ease-in-out;
@@ -26,12 +29,12 @@ a, #close-btn {
     text-decoration: none;
     font-weight: bold;
     display: inline-block;
-    padding: 10px 15px; /* Изменено для более компактного размера кнопки */
+    padding: 10px 15px; /* Компактный размер кнопки */
     background-color: #292929;
     border-radius: 12px;
     transition: background-color 0.3s, color 0.3s, transform 0.3s, box-shadow 0.3s;
     margin: 10px 5px; /* Уменьшено расстояние между кнопками */
-    white-space: nowrap; /* Текст будет всегда в одну строку */
+    white-space: nowrap; /* Текст всегда в одну строку */
 }
 
 a:hover, #close-btn:hover {
@@ -51,12 +54,12 @@ ul {
 li {
     background-color: #1f1f1f;
     margin: 15px 0;
-    padding: 15px 10px; /* Изменено для более компактного размера */
+    padding: 15px 10px; /* Компактный размер */
     border-radius: 15px;
     border: 2px solid transparent;
     transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s; 
     font-size: 1.1rem;
-    max-width: 90%; /* Ограничиваем максимальную ширину */
+    max-width: 90%; /* Ограничение максимальной ширины */
     margin-left: auto;
     margin-right: auto;
 }
@@ -85,7 +88,7 @@ img {
     border-radius: 15px;
     position: relative;
     z-index: 1;
-    border: 4px solid #bb86fc; /* Увеличена толщина обводки */
+    border: 4px solid #bb86fc; /* Толстая обводка */
     box-shadow: 0 0 15px rgba(187, 134, 252, 0.8); /* Эффект свечения */
 }
 
@@ -150,25 +153,25 @@ footer {
 .modal-content h2 {
     color: #bb86fc;
     margin-bottom: 20px;
-    font-size: 1.8rem; /* Увеличен размер заголовка */
-    font-weight: bold; /* Жирный текст */
+    font-size: 1.8rem;
+    font-weight: bold;
 }
 
 .modal-content p {
     color: #e0e0e0;
     margin-bottom: 20px;
-    font-size: 1.2rem; /* Увеличен размер текста */
+    font-size: 1.2rem;
 }
 
 /* Стили для кнопки закрытия */
 #close-btn {
-    padding: 18px 36px; /* Увеличен размер кнопки */
-    background-color: #bb86fc; /* Цвет кнопки изменен под стиль сайта */
+    padding: 18px 36px; /* Увеличенный размер кнопки */
+    background-color: #bb86fc;
     color: #ffffff;
     border: none;
     border-radius: 12px;
     cursor: pointer;
-    font-size: 1.2rem; /* Увеличен размер шрифта */
+    font-size: 1.2rem;
     transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
     margin-top: 20px;
 }
@@ -177,20 +180,4 @@ footer {
     background-color: #3700b3;
     transform: translateY(-2px); /* Эффект при наведении */
     box-shadow: 0 0 20px rgba(187, 134, 252, 0.8); /* Эффект свечения при наведении */
-}
-
-@keyframes pulse {
-    0% {
-        background-color: rgba(30, 30, 30, 1);
-    }
-    50% {
-        background-color: rgba(50, 50, 50, 1);
-    }
-    100% {
-        background-color: rgba(30, 30, 30, 1);
-    }
-}
-
-body {
-    animation: pulse 3s infinite; /* Анимация с длительностью 3 секунды и бесконечным повтором */
 }
