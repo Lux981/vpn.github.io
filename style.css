@@ -5,7 +5,7 @@
 body {
     background: linear-gradient(135deg, #000000 0%, #0a0a0a 100%); /* Убраны все светлые оттенки */
     background-size: 200% 200%; /* Размер фонового изображения для анимации */
-    color: #e0e0e0;
+    color: #e0e0e0; /* Основной цвет текста */
     font-family: 'Montserrat', sans-serif; /* Шрифт Montserrat */
     padding: 20px;
     text-align: center;
@@ -41,12 +41,12 @@ body {
 
 /* Стили для ссылок (кнопки) */
 a, #close-btn {
-    color: #bb86fc;
+    color: #f0f0f0; /* Более мягкий цвет текста для ссылок */
     text-decoration: none;
     font-weight: bold;
     display: inline-block;
     padding: 10px 15px; /* Компактный размер кнопки */
-    background-color: #1f1f1f; /* Более темный цвет фона кнопок */
+    background-color: #292929; /* Более темный цвет фона кнопок */
     border-radius: 12px;
     transition: background-color 0.3s, color 0.3s, transform 0.3s, box-shadow 0.3s;
     margin: 10px 5px; /* Уменьшено расстояние между кнопками */
@@ -55,9 +55,9 @@ a, #close-btn {
 }
 
 a:hover, #close-btn:hover {
-    background-color: #292929; /* Темнее при наведении */
-    color: #ffffff;
-    box-shadow: 0 0 20px rgba(187, 134, 252, 0.8); /* Эффект свечения при наведении */
+    background-color: #3a3a3a; /* Темнее при наведении */
+    color: #ffffff; /* Белый цвет текста при наведении */
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.5); /* Мягкий эффект свечения при наведении */
 }
 
 /* Убираем маркеры списка */
@@ -84,14 +84,14 @@ li {
 li:hover {
     background-color: #292929; /* Темнее при наведении */
     transform: translateY(-5px);
-    box-shadow: 0 0 20px rgba(187, 134, 252, 0.8); /* Эффект свечения */
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.5); /* Мягкий эффект свечения */
 }
 
 /* Стили для заголовков */
 h1 {
-    color: #ffffff;
+    color: #ffffff; /* Цвет заголовка */
     font-size: 2.875rem; /* Увеличен размер заголовка на 15% */
-    border-bottom: 2px solid #bb86fc;
+    border-bottom: 2px solid #f0f0f0; /* Светлая обводка */
     padding-bottom: 10px;
     margin-bottom: 30px;
 }
@@ -105,14 +105,14 @@ img {
     border-radius: 15px;
     position: relative;
     z-index: 1;
-    border: 4px solid #bb86fc; /* Толстая обводка */
-    box-shadow: 0 0 15px rgba(187, 134, 252, 0.8); /* Эффект свечения */
+    border: 4px solid #f0f0f0; /* Светлая обводка */
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.5); /* Мягкий эффект свечения */
 }
 
 /* Стили для подписи */
 footer {
     margin-top: 40px;
-    color: #bb86fc;
+    color: #f0f0f0; /* Цвет подписи */
     font-size: 1.15rem; /* Увеличен размер шрифта на 15% */
     letter-spacing: 1px;
     animation: glow 1.5s infinite alternate;
@@ -121,10 +121,10 @@ footer {
 /* Анимация эффекта свечения подписи */
 @keyframes glow {
     from {
-        text-shadow: 0 0 10px #bb86fc, 0 0 20px #bb86fc, 0 0 30px #bb86fc;
+        text-shadow: 0 0 10px #f0f0f0, 0 0 20px #f0f0f0, 0 0 30px #f0f0f0;
     }
     to {
-        text-shadow: 0 0 20px #3700b3, 0 0 30px #3700b3, 0 0 40px #3700b3;
+        text-shadow: 0 0 20px #3a3a3a, 0 0 30px #3a3a3a, 0 0 40px #3a3a3a;
     }
 }
 
@@ -144,10 +144,10 @@ footer {
 
 /* Контент модального окна */
 .modal-content {
-    background-color: #1f1f1f; /* Более темный фон для модального окна */
+    background-color: #292929; /* Более темный фон для модального окна */
     margin: 20% auto;
     padding: 30px;
-    border: 3px solid #bb86fc;
+    border: 3px solid #f0f0f0; /* Светлая обводка */
     border-radius: 15px;
     width: 80%;
     max-width: 500px;
@@ -168,14 +168,14 @@ footer {
 
 /* Стили для текста в модальном окне */
 .modal-content h2 {
-    color: #bb86fc;
+    color: #f0f0f0; /* Цвет заголовка модального окна */
     margin-bottom: 20px;
     font-size: 2.1rem; /* Увеличен размер заголовка на 15% */
     font-weight: bold;
 }
 
 .modal-content p {
-    color: #e0e0e0;
+    color: #e0e0e0; /* Цвет текста */
     margin-bottom: 20px;
     font-size: 1.38rem; /* Увеличен размер текста на 15% */
 }
@@ -183,8 +183,8 @@ footer {
 /* Стили для кнопки закрытия */
 #close-btn {
     padding: 18px 36px; /* Увеличенный размер кнопки */
-    background-color: #1f1f1f; /* Более темный цвет кнопки */
-    color: #ffffff;
+    background-color: #292929; /* Более темный цвет кнопки */
+    color: #f0f0f0; /* Цвет текста кнопки */
     border: none;
     border-radius: 12px;
     cursor: pointer;
@@ -194,7 +194,7 @@ footer {
 }
 
 #close-btn:hover {
-    background-color: #292929; /* Темнее при наведении */
+    background-color: #3a3a3a; /* Темнее при наведении */
     transform: translateY(-2px); /* Эффект при наведении */
-    box-shadow: 0 0 20px rgba(187, 134, 252, 0.8); /* Эффект свечения при наведении */
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.5); /* Мягкий эффект свечения при наведении */
 }
