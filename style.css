@@ -31,7 +31,7 @@ a, #close-btn {
     font-weight: bold;
     display: inline-block;
     padding: 10px 15px;
-    background-color: #232323; /* Темный фон для кнопок */
+    background-color: #1a1a1a; /* Темный фон для кнопок */
     border-radius: 12px;
     transition: background-color 0.3s, color 0.3s, transform 0.3s, box-shadow 0.3s;
     margin: 10px 5px;
@@ -40,9 +40,9 @@ a, #close-btn {
 }
 
 a:hover, #close-btn:hover {
-    background-color: #3b3b3b; /* Более контрастный фон при наведении */
+    background-color: #2c2c2c; /* Более контрастный фон при наведении */
     color: #ffffff;
-    box-shadow: 0 0 20px rgba(187, 134, 252, 0.8); /* Эффект свечения при наведении */
+    box-shadow: 0 0 20px rgba(187, 134, 252, 1); /* Эффект свечения при наведении */
 }
 
 /* Убираем маркеры списка */
@@ -122,14 +122,14 @@ footer {
     top: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.9); /* Увеличена контрастность фона */
     backdrop-filter: blur(5px);
     animation: fadeIn 0.67s ease-in-out; /* Увеличена скорость анимации на 50% */
 }
 
 /* Контент модального окна */
 .modal-content {
-    background-color: #292929;
+    background-color: #333333; /* Более контрастный темный фон для модального окна */
     margin: 20% auto;
     padding: 30px;
     border: 3px solid #bb86fc; /* Фиолетовая обводка */
@@ -181,6 +181,5 @@ footer {
 #close-btn:hover {
     background-color: #3700b3; /* Фиолетовый при наведении */
     transform: translateY(-2px);
-    box-shadow: 0 0 20px rgba(187, 134, 252, 0.8); /* Эффект свечения при наведении */
+    box-shadow: 0 0 20px rgba(187, 134, 252, 1); /* Эффект свечения при наведении */
 }
-
