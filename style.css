@@ -3,7 +3,7 @@
 
 /* Основные стили для темной темы */
 body {
-    background: linear-gradient(135deg, #0d0d0d 0%, #1a1a1a 100%); /* Уменьшены светлые оттенки */
+    background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 100%); /* Уменьшены светлые оттенки */
     color: #e0e0e0;
     font-family: 'Montserrat', sans-serif;
     padding: 20px;
@@ -122,14 +122,14 @@ footer {
     top: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.9); /* Увеличена контрастность фона */
+    background-color: rgba(0, 0, 0, 0.95); /* Увеличена контрастность фона */
     backdrop-filter: blur(5px);
     animation: fadeIn 0.67s ease-in-out; /* Увеличена скорость анимации на 50% */
 }
 
 /* Контент модального окна */
 .modal-content {
-    background-color: #1f1f1f; /* Темный фон для контента модального окна */
+    background-color: #1e1e1e; /* Темный фон для контента модального окна */
     margin: 20% auto;
     padding: 30px;
     border: 3px solid #bb86fc; /* Фиолетовая обводка */
@@ -169,7 +169,7 @@ footer {
 #close-btn {
     padding: 18px 36px;
     background-color: #bb86fc; /* Фиолетовый цвет кнопки */
-    color: #ffffff;
+    color: #ffffff; /* Сделан контрастным */
     border: none;
     border-radius: 12px;
     cursor: pointer;
