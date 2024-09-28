@@ -191,46 +191,6 @@ footer {
     }
 }
 
-.carousel {
-    position: relative;
-    max-width: 600px; /* Максимальная ширина карусели */
-    margin: auto; /* Центрирование */
-    overflow: hidden; /* Скрыть переполнение */
-}
-
-.carousel-images {
-    display: flex; /* Горизонтальное расположение изображений */
-    transition: transform 0.5s ease; /* Плавный переход */
-}
-
-.carousel img {
-    max-width: 100%; /* Ширина изображений */
-    display: none; /* Скрыть все изображения по умолчанию */
-}
-
-.carousel img.active {
-    display: block; /* Показать только активное изображение */
-}
-
-button {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: rgba(255, 255, 255, 0.8); /* Полупрозрачный фон */
-    border: none;
-    padding: 10px;
-    cursor: pointer;
-}
-
-.prev {
-    left: 10px; /* Положение кнопки "Назад" */
-}
-
-.next {
-    right: 10px; /* Положение кнопки "Вперед" */
-}
-
-
 body {
     animation: pulse 3s infinite; /* Анимация с длительностью 3 секунды и бесконечным повтором */
 }
