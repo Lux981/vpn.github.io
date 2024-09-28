@@ -1,27 +1,13 @@
-/* Основные стили для темной темы1 */
+/* Основные стили для темной темы */
 body {
-    background: linear-gradient(135deg, #000000, #1a1a1a, #333333, #4d4d4d);
-    background-size: 400% 400%;
-    animation: gradientAnimation 15s ease infinite, fadeIn 1s ease-in-out;
+    background: linear-gradient(135deg, #121212 0%, #1d1d1d 100%);
     color: #e0e0e0;
     font-family: 'Roboto', sans-serif;
     padding: 20px;
     text-align: center;
+    animation: fadeIn 1s ease-in-out;
     max-width: 1200px;
     margin: 0 auto;
-}
-
-/* Анимация градиентного переливания темных оттенков */
-@keyframes gradientAnimation {
-    0% {
-        background-position: 0% 50%;
-    }
-    50% {
-        background-position: 100% 50%;
-    }
-    100% {
-        background-position: 0% 50%;
-    }
 }
 
 /* Анимация плавного появления */
@@ -34,55 +20,43 @@ body {
     }
 }
 
-#particles-js {
-    position: fixed; /* Изменено с absolute на fixed для фиксации по всей странице */
-    width: 100%;
-    height: 100%;
-    z-index: -1; /* Позади всего контента */
-    background: linear-gradient(135deg, #121212 0%, #1d1d1d 100%);
-    top: 0;
-    left: 0;
-}
-
-
-
 /* Стили для ссылок (кнопки) */
 a, #close-btn {
     color: #bb86fc;
     text-decoration: none;
     font-weight: bold;
     display: inline-block;
-    padding: 10px 15px;
+    padding: 10px 15px; /* Изменено для более компактного размера кнопки */
     background-color: #292929;
     border-radius: 12px;
     transition: background-color 0.3s, color 0.3s, transform 0.3s, box-shadow 0.3s;
-    margin: 10px 5px;
-    white-space: nowrap;
+    margin: 10px 5px; /* Уменьшено расстояние между кнопками */
+    white-space: nowrap; /* Текст будет всегда в одну строку */
 }
 
 a:hover, #close-btn:hover {
     background-color: #3700b3;
     color: #ffffff;
-    box-shadow: 0 0 20px rgba(187, 134, 252, 0.8);
+    box-shadow: 0 0 20px rgba(187, 134, 252, 0.8); /* Эффект свечения при наведении */
 }
 
 /* Убираем маркеры списка */
 ul {
     list-style: none;
-    display: inline-block;
-    padding: 0;
+    display: inline-block; /* Убираем переносы в списках */
+    padding: 0; /* Убираем отступы */
 }
 
 /* Стиль для пунктов списка */
 li {
     background-color: #1f1f1f;
     margin: 15px 0;
-    padding: 15px 10px;
+    padding: 15px 10px; /* Изменено для более компактного размера */
     border-radius: 15px;
     border: 2px solid transparent;
     transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s; 
     font-size: 1.1rem;
-    max-width: 90%;
+    max-width: 90%; /* Ограничиваем максимальную ширину */
     margin-left: auto;
     margin-right: auto;
 }
@@ -90,7 +64,7 @@ li {
 li:hover {
     background-color: #292929;
     transform: translateY(-5px);
-    box-shadow: 0 0 20px rgba(187, 134, 252, 0.8);
+    box-shadow: 0 0 20px rgba(187, 134, 252, 0.8); /* Эффект свечения */
 }
 
 /* Стили для заголовков */
@@ -111,8 +85,8 @@ img {
     border-radius: 15px;
     position: relative;
     z-index: 1;
-    border: 6px solid #bb86fc;
-    box-shadow: 0 0 30px rgba(187, 134, 252, 0.8);
+    border: 4px solid #bb86fc; /* Увеличена толщина обводки */
+    box-shadow: 0 0 15px rgba(187, 134, 252, 0.8); /* Эффект свечения */
 }
 
 /* Стили для подписи */
@@ -176,31 +150,47 @@ footer {
 .modal-content h2 {
     color: #bb86fc;
     margin-bottom: 20px;
-    font-size: 1.8rem;
-    font-weight: bold;
+    font-size: 1.8rem; /* Увеличен размер заголовка */
+    font-weight: bold; /* Жирный текст */
 }
 
 .modal-content p {
     color: #e0e0e0;
     margin-bottom: 20px;
-    font-size: 1.2rem;
+    font-size: 1.2rem; /* Увеличен размер текста */
 }
 
 /* Стили для кнопки закрытия */
 #close-btn {
-    padding: 18px 36px;
-    background-color: #bb86fc;
+    padding: 18px 36px; /* Увеличен размер кнопки */
+    background-color: #bb86fc; /* Цвет кнопки изменен под стиль сайта */
     color: #ffffff;
     border: none;
     border-radius: 12px;
     cursor: pointer;
-    font-size: 1.2rem;
+    font-size: 1.2rem; /* Увеличен размер шрифта */
     transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
     margin-top: 20px;
 }
 
 #close-btn:hover {
     background-color: #3700b3;
-    transform: translateY(-2px);
-    box-shadow: 0 0 20px rgba(187, 134, 252, 0.8);
+    transform: translateY(-2px); /* Эффект при наведении */
+    box-shadow: 0 0 20px rgba(187, 134, 252, 0.8); /* Эффект свечения при наведении */
+}
+
+@keyframes pulse {
+    0% {
+        background-color: rgba(30, 30, 30, 1);
+    }
+    50% {
+        background-color: rgba(50, 50, 50, 1);
+    }
+    100% {
+        background-color: rgba(30, 30, 30, 1);
+    }
+}
+
+body {
+    animation: pulse 3s infinite; /* Анимация с длительностью 3 секунды и бесконечным повтором */
 }
