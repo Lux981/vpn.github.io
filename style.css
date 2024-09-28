@@ -168,8 +168,8 @@ footer {
 /* Стили для кнопки "ПОНЯТНО" */
 #close-btn {
     padding: 18px 36px;
-    background-color: #383838; /* Темный фон для кнопки "ПОНЯТНО" */
-    color: #bb86fc; /* Фиолетовый текст */
+    background-color: #bb86fc; /* Фиолетовая кнопка */
+    color: #ffffff; /* Белый текст для кнопки */
     border: none;
     border-radius: 12px;
     cursor: pointer;
@@ -179,7 +179,7 @@ footer {
 }
 
 #close-btn:hover {
-    background-color: #484848; /* Темнее при наведении */
+    background-color: #9c6dff; /* Более светлый фиолетовый при наведении */
     transform: translateY(-2px);
     box-shadow: 0 0 20px rgba(187, 134, 252, 1); /* Эффект свечения при наведении */
 }
@@ -198,4 +198,11 @@ footer {
 .window:hover {
     background-color: #555555; /* Более светлый фон при наведении */
     box-shadow: 0 0 20px rgba(187, 134, 252, 1); /* Эффект свечения при наведении */
+}
+
+/* Уменьшение высоты светлого пятна */
+.footer-light {
+    height: 10px; /* Уменьшено в два раза */
+    background-color: rgba(255, 255, 255, 0.1); /* Прозрачный белый цвет */
+    margin: 0;
 }
