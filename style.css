@@ -186,7 +186,7 @@ footer {
 
 /* Стили для окон в окнах */
 .window {
-    background-color: #3a3a3a; /* Светлый фон для окон */
+    background-color: #4a4a4a; /* Светлый фон для окон, более контрастный */
     color: #e0e0e0; /* Цвет текста */
     border: 2px solid #bb86fc; /* Фиолетовая обводка для окон */
     border-radius: 12px;
@@ -196,6 +196,6 @@ footer {
 }
 
 .window:hover {
-    background-color: #444444; /* Более светлый фон при наведении */
+    background-color: #555555; /* Более светлый фон при наведении */
     box-shadow: 0 0 20px rgba(187, 134, 252, 1); /* Эффект свечения при наведении */
 }
