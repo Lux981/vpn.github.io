@@ -34,6 +34,17 @@ body {
     }
 }
 
+#particles-js {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Позади всего контента */
+    background: linear-gradient(135deg, #121212 0%, #1d1d1d 100%); /* Цвет фона из исходного файла */
+    top: 0;
+    left: 0;
+}
+
+
 /* Стили для ссылок (кнопки) */
 a, #close-btn {
     color: #bb86fc;
