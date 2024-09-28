@@ -1,29 +1,14 @@
 /* Основные стили для темной темы */
 body {
-    margin: 0;
-    padding: 0;
-    height: 100vh;
-    background: linear-gradient(135deg, #2b003f, #52006a, #82007f, #d22780);
-    background-size: 400% 400%; /* Позволяет переливу охватывать больше пространства */
-    animation: gradientAnimation 10s ease infinite; /* Плавная бесконечная анимация */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white; /* Текст на фоне будет белым */
+    background: linear-gradient(135deg, #121212 0%, #1d1d1d 100%);
+    color: #e0e0e0;
+    font-family: 'Roboto', sans-serif;
+    padding: 20px;
+    text-align: center;
+    animation: fadeIn 1s ease-in-out;
+    max-width: 1200px;
+    margin: 0 auto;
 }
-
-@keyframes gradientAnimation {
-    0% {
-        background-position: 0% 50%;
-    }
-    50% {
-        background-position: 100% 50%;
-    }
-    100% {
-        background-position: 0% 50%;
-    }
-}
-
 
 /* Анимация плавного появления */
 @keyframes fadeIn {
