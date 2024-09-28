@@ -35,14 +35,15 @@ body {
 }
 
 #particles-js {
-    position: absolute;
+    position: fixed; /* Изменено с absolute на fixed для фиксации по всей странице */
     width: 100%;
     height: 100%;
     z-index: -1; /* Позади всего контента */
-    background: linear-gradient(135deg, #121212 0%, #1d1d1d 100%); /* Цвет фона из исходного файла */
+    background: linear-gradient(135deg, #121212 0%, #1d1d1d 100%);
     top: 0;
     left: 0;
 }
+
 
 
 /* Стили для ссылок (кнопки) */
