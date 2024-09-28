@@ -3,7 +3,7 @@
 
 /* Основные стили для темной темы */
 body {
-    background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 100%); /* Уменьшены светлые оттенки */
+    background: linear-gradient(135deg, #0a0a0a 0%, #0d0d0d 100%); /* Темный фон */
     color: #e0e0e0;
     font-family: 'Montserrat', sans-serif;
     padding: 20px;
@@ -165,11 +165,11 @@ footer {
     font-size: 1.38rem;
 }
 
-/* Стили для кнопки закрытия */
+/* Стили для кнопки "ПОНЯТНО" */
 #close-btn {
     padding: 18px 36px;
-    background-color: #bb86fc; /* Фиолетовый цвет кнопки */
-    color: #ffffff; /* Сделан контрастным */
+    background-color: #383838; /* Темный фон для кнопки "ПОНЯТНО" */
+    color: #bb86fc; /* Фиолетовый текст */
     border: none;
     border-radius: 12px;
     cursor: pointer;
@@ -179,7 +179,7 @@ footer {
 }
 
 #close-btn:hover {
-    background-color: #3700b3; /* Фиолетовый при наведении */
+    background-color: #484848; /* Темнее при наведении */
     transform: translateY(-2px);
     box-shadow: 0 0 20px rgba(187, 134, 252, 1); /* Эффект свечения при наведении */
 }
