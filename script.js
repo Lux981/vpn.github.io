@@ -1,13 +1,19 @@
 document.addEventListener("DOMContentLoaded", function() {
-    // Показываем модальное окно111
+    // Показываем модальное окно
     const reminder = document.getElementById("reminder");
     const closeBtn = document.getElementById("close-btn");
+    const redirectBtn = document.getElementById("redirect-btn");
 
     reminder.style.display = "block";
 
-    // Закрытие окна по нажатию кнопки
+    // Закрытие окна по нажатию кнопки "ПОНЯТНО"
     closeBtn.addEventListener("click", function() {
         reminder.style.display = "none";
+    });
+
+    // Редирект на другой сайт при нажатии на кнопку "ТЫК СЮДА"
+    redirectBtn.addEventListener("click", function() {
+        window.location.href = 'https://www.youtube.com/watch?v=dQw4w9WgXcQ'; // Ваш URL
     });
 });
 
@@ -30,7 +36,7 @@ function createConfetti() {
         // Удаляем конфетти после окончания анимации
         setTimeout(() => {
             confettiPiece.remove();
-        }, 3000); // Удаляем через 3 секунды (должно быть больше, чем время анимации)
+        }, 3000); // Удаляем через 3 секунды
     }
 }
 
@@ -39,4 +45,3 @@ document.getElementById('openModalButton').onclick = function() {
     createConfetti();
     document.querySelector('.modal').style.display = 'block'; // Показываем модальное окно
 };
-
