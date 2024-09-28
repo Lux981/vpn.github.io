@@ -24,23 +24,38 @@ body {
     }
 }
 
-/* Стили для ссылок (кнопки) */
+/* Стили для кнопок (темные с переливом) */
 a, #close-btn {
     color: #bb86fc; /* Фиолетовый цвет для текста */
     text-decoration: none;
     font-weight: bold;
     display: inline-block;
     padding: 10px 15px;
-    background-color: #1a1a1a; /* Темный фон для кнопок */
+    background: linear-gradient(135deg, #3a3a3a, #2c2c2c); /* Темный фон с градиентом */
     border-radius: 12px;
     transition: background-color 0.3s, color 0.3s, transform 0.3s, box-shadow 0.3s;
     margin: 10px 5px;
     white-space: nowrap;
     font-size: inherit;
+    background-size: 200% 200%; /* Увеличиваем размер фона для анимации */
+    animation: gradientAnimation 3s ease infinite; /* Анимация градиента */
+}
+
+/* Анимация градиента */
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
 }
 
 a:hover, #close-btn:hover {
-    background-color: #2c2c2c; /* Более контрастный фон при наведении */
+    background-color: #292929; /* Более контрастный фон при наведении */
     color: #ffffff;
     box-shadow: 0 0 20px rgba(187, 134, 252, 1); /* Эффект свечения при наведении */
 }
@@ -168,7 +183,7 @@ footer {
 /* Стили для кнопки "ПОНЯТНО" */
 #close-btn {
     padding: 18px 36px;
-    background-color: #bb86fc; /* Фиолетовая кнопка */
+    background: linear-gradient(135deg, #3a3a3a, #2c2c2c); /* Темный фон с градиентом */
     color: #ffffff; /* Белый текст для кнопки */
     border: none;
     border-radius: 12px;
@@ -179,7 +194,7 @@ footer {
 }
 
 #close-btn:hover {
-    background-color: #9c6dff; /* Более светлый фиолетовый при наведении */
+    background-color: #292929; /* Более светлый фон при наведении */
     transform: translateY(-2px);
     box-shadow: 0 0 20px rgba(187, 134, 252, 1); /* Эффект свечения при наведении */
 }
@@ -211,17 +226,3 @@ footer {
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
-    pointer-events: none; /* Чтобы конфетти не мешали взаимодействию с другими элементами */
-    z-index: 99; /* Убедитесь, что конфетти выше остальных элементов */
-    overflow: hidden; /* Скрываем переполнение */
-    display: none; /* Изначально скрываем конфетти */
-}
-
-.confetti-piece {
-    position: absolute;
-    width: 10px; /* Размер конфетти */
-    height: 10px; /* Размер конфетти */
-    opacity: 0.8;
-    pointer-events: none; /* Чтобы конфетти не мешали
