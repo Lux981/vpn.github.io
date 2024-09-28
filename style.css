@@ -3,7 +3,7 @@
 
 /* Основные стили для темной темы */
 body {
-    background: linear-gradient(135deg, #0a0a0a 0%, #121212 100%); /* Убраны светлые оттенки */
+    background: linear-gradient(135deg, #000000 0%, #0a0a0a 100%); /* Убраны все светлые оттенки */
     background-size: 200% 200%; /* Размер фонового изображения для анимации */
     color: #e0e0e0;
     font-family: 'Montserrat', sans-serif; /* Шрифт Montserrat */
@@ -46,7 +46,7 @@ a, #close-btn {
     font-weight: bold;
     display: inline-block;
     padding: 10px 15px; /* Компактный размер кнопки */
-    background-color: #292929;
+    background-color: #1f1f1f; /* Более темный цвет фона кнопок */
     border-radius: 12px;
     transition: background-color 0.3s, color 0.3s, transform 0.3s, box-shadow 0.3s;
     margin: 10px 5px; /* Уменьшено расстояние между кнопками */
@@ -55,7 +55,7 @@ a, #close-btn {
 }
 
 a:hover, #close-btn:hover {
-    background-color: #3700b3;
+    background-color: #292929; /* Темнее при наведении */
     color: #ffffff;
     box-shadow: 0 0 20px rgba(187, 134, 252, 0.8); /* Эффект свечения при наведении */
 }
@@ -69,7 +69,7 @@ ul {
 
 /* Стиль для пунктов списка */
 li {
-    background-color: #1f1f1f;
+    background-color: #1f1f1f; /* Темный фон для списка */
     margin: 15px 0;
     padding: 15px 10px; /* Компактный размер */
     border-radius: 15px;
@@ -82,7 +82,7 @@ li {
 }
 
 li:hover {
-    background-color: #292929;
+    background-color: #292929; /* Темнее при наведении */
     transform: translateY(-5px);
     box-shadow: 0 0 20px rgba(187, 134, 252, 0.8); /* Эффект свечения */
 }
@@ -144,7 +144,7 @@ footer {
 
 /* Контент модального окна */
 .modal-content {
-    background-color: #292929;
+    background-color: #1f1f1f; /* Более темный фон для модального окна */
     margin: 20% auto;
     padding: 30px;
     border: 3px solid #bb86fc;
@@ -183,7 +183,7 @@ footer {
 /* Стили для кнопки закрытия */
 #close-btn {
     padding: 18px 36px; /* Увеличенный размер кнопки */
-    background-color: #bb86fc;
+    background-color: #1f1f1f; /* Более темный цвет кнопки */
     color: #ffffff;
     border: none;
     border-radius: 12px;
@@ -194,7 +194,7 @@ footer {
 }
 
 #close-btn:hover {
-    background-color: #3700b3;
+    background-color: #292929; /* Темнее при наведении */
     transform: translateY(-2px); /* Эффект при наведении */
     box-shadow: 0 0 20px rgba(187, 134, 252, 0.8); /* Эффект свечения при наведении */
 }
