@@ -3,17 +3,15 @@
 
 /* Основные стили для темной темы */
 body {
-    background: linear-gradient(135deg, #000000 0%, #0a0a0a 100%); /* Убраны все светлые оттенки */
-    background-size: 200% 200%; /* Размер фонового изображения для анимации */
-    color: #e0e0e0; /* Основной цвет текста */
-    font-family: 'Montserrat', sans-serif; /* Шрифт Montserrat */
+    background: linear-gradient(135deg, #0a0a0a 0%, #1d1d1d 100%);
+    color: #e0e0e0;
+    font-family: 'Montserrat', sans-serif;
     padding: 20px;
     text-align: center;
     animation: fadeIn 1s ease-in-out;
-    animation: gradient 6s ease infinite; /* Увеличена скорость переливания фона */
     max-width: 1200px;
     margin: 0 auto;
-    font-size: 1.15rem; /* Размер шрифта */
+    font-size: 1.15rem; /* Увеличен размер шрифта на 15% */
 }
 
 /* Анимация плавного появления */
@@ -26,72 +24,59 @@ body {
     }
 }
 
-/* Анимация переливания фона */
-@keyframes gradient {
-    0% {
-        background-position: 0% 50%;
-    }
-    50% {
-        background-position: 100% 50%;
-    }
-    100% {
-        background-position: 0% 50%;
-    }
-}
-
 /* Стили для ссылок (кнопки) */
 a, #close-btn {
-    color: #f0f0f0; /* Более мягкий цвет текста для ссылок */
+    color: #ffffff;
     text-decoration: none;
     font-weight: bold;
     display: inline-block;
-    padding: 10px 15px; /* Компактный размер кнопки */
-    background-color: #292929; /* Более темный цвет фона кнопок */
+    padding: 10px 15px;
+    background-color: #1f1f1f; /* Темный фон для кнопок */
     border-radius: 12px;
     transition: background-color 0.3s, color 0.3s, transform 0.3s, box-shadow 0.3s;
-    margin: 10px 5px; /* Уменьшено расстояние между кнопками */
-    white-space: nowrap; /* Текст всегда в одну строку */
-    font-size: inherit; /* Унаследовать размер шрифта от родителя */
+    margin: 10px 5px;
+    white-space: nowrap;
+    font-size: inherit;
 }
 
 a:hover, #close-btn:hover {
-    background-color: #3a3a3a; /* Темнее при наведении */
-    color: #ffffff; /* Белый цвет текста при наведении */
-    box-shadow: 0 0 15px rgba(255, 255, 255, 0.5); /* Мягкий эффект свечения при наведении */
+    background-color: #6200ea; /* Неоновый фиолетовый */
+    color: #ffffff;
+    box-shadow: 0 0 20px rgba(98, 0, 234, 0.8); /* Эффект свечения при наведении */
 }
 
 /* Убираем маркеры списка */
 ul {
     list-style: none;
-    display: inline-block; /* Убираем переносы в списках */
-    padding: 0; /* Убираем отступы */
+    display: inline-block;
+    padding: 0;
 }
 
 /* Стиль для пунктов списка */
 li {
-    background-color: #1f1f1f; /* Темный фон для списка */
+    background-color: #292929; /* Темный фон для пунктов */
     margin: 15px 0;
-    padding: 15px 10px; /* Компактный размер */
+    padding: 15px 10px;
     border-radius: 15px;
     border: 2px solid transparent;
     transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s; 
-    font-size: 1.1rem; /* Увеличен размер шрифта на 15% */
-    max-width: 90%; /* Ограничение максимальной ширины */
+    font-size: 1.1rem;
+    max-width: 90%;
     margin-left: auto;
     margin-right: auto;
 }
 
 li:hover {
-    background-color: #292929; /* Темнее при наведении */
+    background-color: #6200ea; /* Неоновый фиолетовый */
     transform: translateY(-5px);
-    box-shadow: 0 0 15px rgba(255, 255, 255, 0.5); /* Мягкий эффект свечения */
+    box-shadow: 0 0 20px rgba(98, 0, 234, 0.8); /* Эффект свечения */
 }
 
 /* Стили для заголовков */
 h1 {
-    color: #ffffff; /* Цвет заголовка */
-    font-size: 2.875rem; /* Увеличен размер заголовка на 15% */
-    border-bottom: 2px solid #f0f0f0; /* Светлая обводка */
+    color: #ffffff;
+    font-size: 2.875rem;
+    border-bottom: 2px solid #6200ea; /* Неоновый фиолетовый */
     padding-bottom: 10px;
     margin-bottom: 30px;
 }
@@ -105,15 +90,15 @@ img {
     border-radius: 15px;
     position: relative;
     z-index: 1;
-    border: 4px solid #f0f0f0; /* Светлая обводка */
-    box-shadow: 0 0 15px rgba(255, 255, 255, 0.5); /* Мягкий эффект свечения */
+    border: 4px solid #6200ea; /* Неоновая обводка */
+    box-shadow: 0 0 15px rgba(98, 0, 234, 0.8); /* Эффект свечения */
 }
 
 /* Стили для подписи */
 footer {
     margin-top: 40px;
-    color: #f0f0f0; /* Цвет подписи */
-    font-size: 1.15rem; /* Увеличен размер шрифта на 15% */
+    color: #6200ea; /* Неоновый фиолетовый */
+    font-size: 1.15rem;
     letter-spacing: 1px;
     animation: glow 1.5s infinite alternate;
 }
@@ -121,10 +106,10 @@ footer {
 /* Анимация эффекта свечения подписи */
 @keyframes glow {
     from {
-        text-shadow: 0 0 10px #f0f0f0, 0 0 20px #f0f0f0, 0 0 30px #f0f0f0;
+        text-shadow: 0 0 10px #6200ea, 0 0 20px #6200ea, 0 0 30px #6200ea;
     }
     to {
-        text-shadow: 0 0 20px #3a3a3a, 0 0 30px #3a3a3a, 0 0 40px #3a3a3a;
+        text-shadow: 0 0 20px #3700b3, 0 0 30px #3700b3, 0 0 40px #3700b3;
     }
 }
 
@@ -144,10 +129,10 @@ footer {
 
 /* Контент модального окна */
 .modal-content {
-    background-color: #292929; /* Более темный фон для модального окна */
+    background-color: #292929;
     margin: 20% auto;
     padding: 30px;
-    border: 3px solid #f0f0f0; /* Светлая обводка */
+    border: 3px solid #6200ea; /* Неоновая обводка */
     border-radius: 15px;
     width: 80%;
     max-width: 500px;
@@ -168,33 +153,33 @@ footer {
 
 /* Стили для текста в модальном окне */
 .modal-content h2 {
-    color: #f0f0f0; /* Цвет заголовка модального окна */
+    color: #6200ea; /* Неоновый фиолетовый */
     margin-bottom: 20px;
-    font-size: 2.1rem; /* Увеличен размер заголовка на 15% */
+    font-size: 2.1rem;
     font-weight: bold;
 }
 
 .modal-content p {
-    color: #e0e0e0; /* Цвет текста */
+    color: #e0e0e0;
     margin-bottom: 20px;
-    font-size: 1.38rem; /* Увеличен размер текста на 15% */
+    font-size: 1.38rem;
 }
 
 /* Стили для кнопки закрытия */
 #close-btn {
-    padding: 18px 36px; /* Увеличенный размер кнопки */
-    background-color: #292929; /* Более темный цвет кнопки */
-    color: #f0f0f0; /* Цвет текста кнопки */
+    padding: 18px 36px;
+    background-color: #6200ea; /* Неоновый фиолетовый */
+    color: #ffffff;
     border: none;
     border-radius: 12px;
     cursor: pointer;
-    font-size: 1.38rem; /* Увеличен размер шрифта на 15% */
+    font-size: 1.38rem;
     transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
     margin-top: 20px;
 }
 
 #close-btn:hover {
-    background-color: #3a3a3a; /* Темнее при наведении */
-    transform: translateY(-2px); /* Эффект при наведении */
-    box-shadow: 0 0 15px rgba(255, 255, 255, 0.5); /* Мягкий эффект свечения при наведении */
+    background-color: #3700b3;
+    transform: translateY(-2px);
+    box-shadow: 0 0 20px rgba(98, 0, 234, 0.8); /* Эффект свечения при наведении */
 }
