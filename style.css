@@ -129,7 +129,7 @@ footer {
 
 /* Контент модального окна */
 .modal-content {
-    background-color: #2a2a2a; /* Более светлый фон для контента модального окна */
+    background-color: #1f1f1f; /* Темный фон для контента модального окна */
     margin: 20% auto;
     padding: 30px;
     border: 3px solid #bb86fc; /* Фиолетовая обводка */
@@ -186,7 +186,7 @@ footer {
 
 /* Стили для окон в окнах */
 .window {
-    background-color: #4a4a4a; /* Светлый фон для окон, более контрастный */
+    background-color: #2a2a2a; /* Темный фон для окон */
     color: #e0e0e0; /* Цвет текста */
     border: 2px solid #bb86fc; /* Фиолетовая обводка для окон */
     border-radius: 12px;
