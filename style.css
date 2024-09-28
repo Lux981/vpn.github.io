@@ -206,3 +206,34 @@ footer {
     background-color: rgba(255, 255, 255, 0.1); /* Прозрачный белый цвет */
     margin: 0;
 }
+
+#confetti {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none; /* Чтобы конфетти не мешали взаимодействию с другими элементами */
+    z-index: 99; /* Убедитесь, что конфетти выше остальных элементов */
+    overflow: hidden; /* Скрываем переполнение */
+    display: none; /* Изначально скрываем конфетти */
+}
+
+.confetti-piece {
+    position: absolute;
+    width: 10px; /* Размер конфетти */
+    height: 10px; /* Размер конфетти */
+    opacity: 0.8;
+    pointer-events: none; /* Чтобы конфетти не мешали взаимодействию с другими элементами */
+    animation: fall 3s linear forwards; /* Анимация падения */
+}
+
+@keyframes fall {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(100vh); /* Падает до низу экрана */
+    }
+}
+
