@@ -81,7 +81,7 @@ h1 {
     margin-bottom: 30px;
 }
 
-/* Стили для изображений с пульсирующей обводкой */
+/* Стили для изображений без пульсации */
 img {
     display: block;
     margin: 20px auto;
@@ -92,19 +92,6 @@ img {
     z-index: 1;
     border: 4px solid #bb86fc; /* Фиолетовая обводка */
     box-shadow: 0 0 15px rgba(187, 134, 252, 0.8); /* Эффект свечения */
-    animation: pulse 2s infinite alternate; /* Пульсирующая анимация */
-}
-
-/* Анимация пульсации */
-@keyframes pulse {
-    0% {
-        border-color: rgba(187, 134, 252, 1);
-        transform: scale(1);
-    }
-    100% {
-        border-color: rgba(187, 134, 252, 0.5);
-        transform: scale(1.02);
-    }
 }
 
 /* Стили для подписи */
@@ -142,7 +129,7 @@ footer {
 
 /* Контент модального окна */
 .modal-content {
-    background-color: #222222; /* Более светлый фон для модального окна */
+    background-color: #2a2a2a; /* Более светлый фон для контента модального окна */
     margin: 20% auto;
     padding: 30px;
     border: 3px solid #bb86fc; /* Фиолетовая обводка */
@@ -194,5 +181,21 @@ footer {
 #close-btn:hover {
     background-color: #3700b3; /* Фиолетовый при наведении */
     transform: translateY(-2px);
+    box-shadow: 0 0 20px rgba(187, 134, 252, 1); /* Эффект свечения при наведении */
+}
+
+/* Стили для окон в окнах */
+.window {
+    background-color: #3a3a3a; /* Светлый фон для окон */
+    color: #e0e0e0; /* Цвет текста */
+    border: 2px solid #bb86fc; /* Фиолетовая обводка для окон */
+    border-radius: 12px;
+    padding: 20px;
+    margin: 10px;
+    transition: background-color 0.3s, box-shadow 0.3s; /* Плавные переходы для фона и тени */
+}
+
+.window:hover {
+    background-color: #444444; /* Более светлый фон при наведении */
     box-shadow: 0 0 20px rgba(187, 134, 252, 1); /* Эффект свечения при наведении */
 }
